@@ -24,7 +24,7 @@ class StackPushPop {
           }
           else {
               a[++top] = x;
-              System.out.println(x + " put in pile");
+              System.out.println("You put " + x + " in pile");
               return true;
           }
       }
@@ -59,13 +59,20 @@ class StackPushPop {
       }
     }
   }
-    CardStack s = new CardStack();
-          s.push(2);
-          s.push(5);
-          s.push(8);
-          s.push(6);
-          System.out.println(s.pop() + " Has been pulled from the pile");
-          System.out.println("The top card is :" + s.peek());
-          System.out.print("Cards in pile :");
-          s.print();  
+          System.out.println("Lets put some cards in the pile: ");
+    CardStack stack1 = new CardStack();
+          stack1.push(2);
+          stack1.push(5);
+          stack1.push(8);
+          stack1.push(6);
+      System.out.println(" ");
+      System.out.println("Lets take that last card back: ");
+          System.out.println(stack1.pop() + " Has been pulled from the pile");
+          System.out.println(" ");
+      System.out.println("Next, lets take a peek at the top card again: ");
+          System.out.println("Currently the top card is :" + stack1.peek());
+          System.out.println(" ");
+      System.out.println("What do we have left: ");
+          System.out.print("Currently the cards in pile are :");
+          stack1.print();  
   }}
