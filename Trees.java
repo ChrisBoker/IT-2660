@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class Listing { 
  String name;
  String address;
